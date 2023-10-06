@@ -108,6 +108,14 @@ git diff origin/main     // 比较
 
 
 
+**git special operation**
+
+git checkout .  // 在Git中，要将本地仓库的更改更新到工作区 
+
+git checkout -- filename      // 要将本地仓库的更改更新到工作区 ，新的文件或目录的路径 
+
+
+
 
 
 
