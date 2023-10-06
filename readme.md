@@ -56,7 +56,7 @@ git push origin --delete <branch-name>
 
 
 
-
+下载分支，然后又测试。
 
  
 
