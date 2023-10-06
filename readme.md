@@ -50,9 +50,9 @@ just a test。
 
 
 
+git push origin --delete <branch-name>
 
-
-
+ 在这个命令中，`` 是您要删除的分支的名称。例如，如果要删除名为 `my-branch` 的分支，可以运行： 
 
 
 
