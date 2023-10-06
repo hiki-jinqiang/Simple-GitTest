@@ -58,5 +58,21 @@ git push origin --delete <branch-name>
 
 下载分支，然后又测试。
 
+
+
+
+
+git clone -b master <url>
+
+cd filename
+
+git branch
+
+git remote -v
+
+git push
+
+git pull
+
  
 
