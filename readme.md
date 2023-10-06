@@ -8,7 +8,7 @@
 
 ![](E:/3-GitTest/picture/Snipaste_2023-10-06_21-17-33.png)
 
-
+**git配置基本信息：**
 
 git config --global user.name "global"
 
@@ -18,125 +18,111 @@ git config --global --list
 
 
 
+**git常用命令：**
+
 git init
 
 git status
 
 git add txt,md
 
- git commit
+ git commit -m "first commit"
+
+git commit -a -m "first commit"   //提交
 
 git log
+
+git ls-tree newbranch <filename>
+
+ls
+
+cd
 
 touch .gitignore
 
 
 
-git branch newbranch
+**git 分支相关命令：**
 
-git branch
+git branch newbranch  //创建指令
 
-git checkout
+git branch                       //查看branch
 
+git branch -r                   //查看远程仓库分支
 
+git checkout  newbranch  //切换分支
 
-git branch -d newbranch
+git branch -d newbranch  //删除分支
 
-git branch -D newbranch
+git branch -D newbranch //直接删除分支
 
+git checkout -b temp         //创建分支并切换
 
+git merge newbranch  //在当前分支下合并newbranch分支。
 
-git checkout -b temp
 
-git commit -a -m "first commit"
 
- 
+git ls-tree -r <branch-name>    //查看分支 ，在这个命令中，`` 是您要查看的分支的名称。这个命令将列出指定分支下的所有文件和它们的详细信息，包括文件的类型（blob）、文件的SHA-1哈希值、文件的大小以及文件的路径 
 
-git merge newbranch
 
 
+**git远程仓库：**
 
-git ls-tree -r <branch-name>
+git remote -v                                         //查看远程仓库
 
- 在这个命令中，`` 是您要查看的分支的名称。这个命令将列出指定分支下的所有文件和它们的详细信息，包括文件的类型（blob）、文件的SHA-1哈希值、文件的大小以及文件的路径 ----just a test
+git remote add origin https:....... //添加远程创库
 
-git merge  //别的分支合并到当前的分支上。
+git remote set-url origin  newhttps：.....   //修改origin的url
 
+git remote remove origin                 //删除origin
 
+git push origin --delete <branch-name>      //远程删除分支，需要权限
 
 
 
-just a test。
+git push         //在有上游分支设定情况可直接上传
 
+git push -u origin newbranch             // 这将推送当前分支 `newbranch` 到远程仓库 `origin` 并将其设置为上游分        支。一旦设置了上游分支，您就可以使用 `git push` 和 `git pull` 命令，而不必再指定远程分支的名称。 
 
+git push origin newbranch          // 这将只推送当前分支，但不会将其与远程分支关联起来 
 
-git push origin --delete <branch-name>
+git push origin --delete  branch      //删除远程仓库的branch
 
-<<<<<<< HEAD
 
-remote resonpd：
 
-build resonpd in github
+git clone git@github.com:hiki-jinqiang/Simple-GitTest.git      //下载远程仓库
 
-git clone git@github.com:hiki-jinqiang/Simple-GitTest.git
+git clone -b my-feature git@github.com:hiki-jinqiang/Simple-GitTest.git   //下载指定的分支的仓库
 
-git remote -v
+git pull         //
 
-git push
+git fetch origin branch      //拉取远程仓库分支到本地仓库
 
-git fetch origin
+git fetch origin feature-branch:my-feature  // 例如，假设您要从远程仓库 `origin` 拉取名为 `feature-branch`    的分支到本地并将其命名为 `my-feature` 
 
-git diff origin/main
+git merge origin/my-feature  // 如果您想将远程分支的更新合并到您的本地分支，可以使用 `git merge` 
 
 
 
- git remote add <remote-name> <remote-url> 
+git diff origin/main     // 比较
 
- 其中 `` 是您为远程仓库起的名称，通常为 `origin`， `` 是远程仓库的URL。例如： 
 
 
 
 
 
-git push -u origin newbranch
 
- 这将推送当前分支 `newbranch` 到远程仓库 `origin` 并将其设置为上游分支。一旦设置了上游分支，您就可以使用 `git push` 和 `git pull` 命令，而不必再指定远程分支的名称。 
 
 
 
-git push origin newbranch
 
- 这将只推送当前分支，但不会将其与远程分支关联起来。在以后的推送和拉取操作中，您需要显式指定远程分支的名称。 
 
-=======
 
 
 
-git push origin --delete <branch-name>
 
- 在这个命令中，`` 是您要删除的分支的名称。例如，如果要删除名为 `my-branch` 的分支，可以运行： 
 
->>>>>>> master
 
 
 
-下载分支，然后又测试。
 
-
-
-
-
-git clone -b master <url>
-
-cd filename
-
-git branch
-
-git remote -v
-
-git push
-
-git pull
-
- 
-new test for clone then push
