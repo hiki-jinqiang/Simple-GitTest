@@ -14,6 +14,10 @@ git config --global user.name "global"
 
 git config --global user.email
 
+git config --global --list
+
+
+
 git init
 
 git status
@@ -41,6 +45,20 @@ git branch -d newbranch
 git branch -D newbranch
 
 
+
+git checkout -b temp
+
+git commit -a -m "first commit"
+
+
+
+
+
+git ls-tree -r <branch-name>
+
+ 在这个命令中，`` 是您要查看的分支的名称。这个命令将列出指定分支下的所有文件和它们的详细信息，包括文件的类型（blob）、文件的SHA-1哈希值、文件的大小以及文件的路径 ----just a test
+
+git merge  //别的分支合并到当前的分支上。
 
 
 
