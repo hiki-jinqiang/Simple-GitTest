@@ -50,7 +50,9 @@ git checkout -b temp
 
 git commit -a -m "first commit"
 
+ 
 
+git merge newbranch
 
 
 
