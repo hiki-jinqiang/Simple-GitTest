@@ -70,7 +70,9 @@ just a test。
 
 
 
+git push origin --delete <branch-name>
 
+<<<<<<< HEAD
 
 remote resonpd：
 
@@ -106,7 +108,15 @@ git push origin newbranch
 
  这将只推送当前分支，但不会将其与远程分支关联起来。在以后的推送和拉取操作中，您需要显式指定远程分支的名称。 
 
+=======
 
+
+
+
+
+ 在这个命令中，`` 是您要删除的分支的名称。例如，如果要删除名为 `my-branch` 的分支，可以运行： 
+
+>>>>>>> master
 
 
 
