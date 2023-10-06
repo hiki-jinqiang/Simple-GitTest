@@ -88,9 +88,9 @@ git diff origin/main
 
 
 
+ git remote add <remote-name> <remote-url> 
 
-
-
+ 其中 `` 是您为远程仓库起的名称，通常为 `origin`， `` 是远程仓库的URL。例如： 
 
 
 
