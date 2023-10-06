@@ -96,7 +96,15 @@ git diff origin/main
 
 
 
+git push -u origin newbranch
 
+ 这将推送当前分支 `newbranch` 到远程仓库 `origin` 并将其设置为上游分支。一旦设置了上游分支，您就可以使用 `git push` 和 `git pull` 命令，而不必再指定远程分支的名称。 
+
+
+
+git push origin newbranch
+
+ 这将只推送当前分支，但不会将其与远程分支关联起来。在以后的推送和拉取操作中，您需要显式指定远程分支的名称。 
 
 
 
