@@ -108,15 +108,25 @@ git diff origin/main     // 比较
 
 
 
-**git special operation**
+**git special operation**----有点混乱与几个区域的之间的互相更新。特别是暂存区和本地仓库之间。
 
 git checkout .  // 在Git中，要将本地仓库的更改更新到工作区 
 
 git checkout -- filename      // 要将本地仓库的更改更新到工作区 ，新的文件或目录的路径 
 
+git reset --hard HEAD  // 这个命令会将工作区的文件回滚到与最新提交（`HEAD`）相同的状态，同时也会取消暂存区的更改。 
+
+git push origin --delete <branch-name>      //远程删除分支，需要权限
 
 
 
+git diff       //用于比较工作区和工作区的区别
+
+git diff filename //比较工作目录中特定文件与暂存区之间的差异：
+
+git diff --staged  //比较暂存区与最新提交之间的差异：
+
+git diff commit-A  // 要比较工作区和某个特定提交之间的差异，可以运行： 
 
 
 
