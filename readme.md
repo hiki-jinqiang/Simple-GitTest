@@ -72,6 +72,32 @@ just a test。
 
 
 
+remote resonpd：
+
+build resonpd in github
+
+git clone git@github.com:hiki-jinqiang/Simple-GitTest.git
+
+git remote -v
+
+git push
+
+git fetch origin
+
+git diff origin/main
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
