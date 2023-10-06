@@ -110,11 +110,15 @@ git diff origin/main     // 比较
 
 **git special operation**----有点混乱与几个区域的之间的互相更新。特别是暂存区和本地仓库之间。
 
-git checkout .  // 在Git中，要将本地仓库的更改更新到工作区 
+git checkout HEAD -- .   // 在Git中，要将本地仓库的更改更新到工作区 
 
-git checkout -- filename      // 要将本地仓库的更改更新到工作区 ，新的文件或目录的路径 
+git checkout HEAD -- filename   //在Git中，要将本地仓库的更改更新到工作区  , 指定文件
 
-git reset --hard HEAD  // 这个命令会将工作区的文件回滚到与最新提交（`HEAD`）相同的状态，同时也会取消暂存区的更改。 
+git checkout .  // 在Git中，要将暂存区的更改更新到工作区 
+
+git checkout -- filename      // 要将暂存区的更改更新到工作区 ，指定文件
+
+ 
 
 git push origin --delete <branch-name>      //远程删除分支，需要权限
 
